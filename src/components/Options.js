@@ -25,9 +25,9 @@ function Options() {
   return (
     <div className='mt-4'>
       <h1 className='pb-4'>Please Select</h1>
-      <button onClick={handleAllUsers} className='btn btn-primary mx-4 '>See All Users</button>
-      <button onClick={handleSubmit} className='btn btn-primary mx-4'>Fetch By Id</button>
-      <button onClick={handleUsers} className='btn btn-primary mx-4'>Num of Users</button>
+      <button onClick={handleAllUsers} className='btn btn-primary mx-2 '>See All Users</button>
+      <button onClick={handleSubmit} className='btn btn-primary mx-2'>Fetch By Id</button>
+      <button onClick={handleUsers} className='btn btn-primary mx-2'>Num of Users</button>
       {showUsers && <p className='pt-4'>Total number of users: {users.length}</p>}
     </div>
   )
