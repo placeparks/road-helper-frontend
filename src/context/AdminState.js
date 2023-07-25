@@ -5,7 +5,7 @@ export const adminContext = createContext();
 const AdminState = (props) => {
   const [users, setUsers] = useState([]);
   const [isAdminLoggedIn, setAdminLoggedIn] = useState(false);
-  const host = "http://localhost:5000";
+  const host = "https://road-guide-0c014edb3d36.herokuapp.com";
 
   useEffect(() => {
     const getUsers = async () => {
