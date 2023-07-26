@@ -36,11 +36,13 @@ function Options() {
   return (
     <div className='mt-4'>
       <h1 className='pb-4'>Please Select</h1>
-      <button onClick={handleAllUsers} className='btn btn-primary mx-2 '>See All Users</button>
-      <button onClick={handleSubmit} className='btn btn-primary mx-2'>Fetch By Id</button>
-      <button onClick={handleUsers} className='btn btn-primary mx-2'>Num of Users</button>
-     {isAdminLoggedIn && <button onClick={handleDelUser} className='btn btn-danger mx-2'>Delete User</button>}
-     {isAdminLoggedIn && <button onClick={handleUpdateUser} className='btn btn-warning mx-2'>Update User</button>}
+      <div className="d-flex flex-wrap justify-content-center">
+        <button onClick={handleAllUsers} className='btn btn-primary my-2 mx-2'>See All Users</button>
+        <button onClick={handleSubmit} className='btn btn-primary my-2 mx-2'>Fetch By Id</button>
+        <button onClick={handleUsers} className='btn btn-primary my-2 mx-2'>Num of Users</button>
+        {isAdminLoggedIn && <button onClick={handleDelUser} className='btn btn-danger my-2 mx-2'>Delete User</button>}
+        {isAdminLoggedIn && <button onClick={handleUpdateUser} className='btn btn-warning my-2 mx-2'>Update User</button>}
+      </div>
       {showUsers && <p className='pt-4'>Total number of users: {users.length}</p>}
     </div>
   )
