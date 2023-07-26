@@ -5,8 +5,12 @@ export const adminContext = createContext();
 const AdminState = (props) => {
   const [users, setUsers] = useState([]);
   const [isAdminLoggedIn, setAdminLoggedIn] = useState(false);
+<<<<<<< HEAD
   const [isCallCenterLoggedIn, setCallCenterLoggedIn] = useState(false);
   const host = "http://localhost:5000";
+=======
+  const host = "https://road-guide-0c014edb3d36.herokuapp.com";
+>>>>>>> 897194f2ef87886fd9ad2166c756a6c9e699f789
 
   useEffect(() => {
     const getUsers = async () => {
