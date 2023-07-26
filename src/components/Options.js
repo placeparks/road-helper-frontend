@@ -39,11 +39,8 @@ function Options() {
       <button onClick={handleAllUsers} className='btn btn-primary mx-2 '>See All Users</button>
       <button onClick={handleSubmit} className='btn btn-primary mx-2'>Fetch By Id</button>
       <button onClick={handleUsers} className='btn btn-primary mx-2'>Num of Users</button>
-<<<<<<< HEAD
      {isAdminLoggedIn && <button onClick={handleDelUser} className='btn btn-danger mx-2'>Delete User</button>}
      {isAdminLoggedIn && <button onClick={handleUpdateUser} className='btn btn-warning mx-2'>Update User</button>}
-=======
->>>>>>> 897194f2ef87886fd9ad2166c756a6c9e699f789
       {showUsers && <p className='pt-4'>Total number of users: {users.length}</p>}
     </div>
   )
