@@ -3,7 +3,7 @@ import { adminContext } from '../context/AdminState';
 import { useNavigate } from 'react-router-dom';
 
 const Logout = () => {
-  const { logout, isAdminLoggedIn } = useContext(adminContext);
+  const { logout, isAdminLoggedIn, isCallCenterLoggedIn } = useContext(adminContext);
   const navigate = useNavigate();
 
   const handleLogout = () => {
@@ -13,7 +13,7 @@ const Logout = () => {
 
   return (
     <div className='d-flex justify-content-end p-4'>
-        {isAdminLoggedIn && <button className='btn btn-info' onClick={handleLogout}>Logout</button>}
+        {isAdminLoggedIn || isCallCenterLoggedIn && <button className='btn btn-info' onClick={handleLogout}>Logout</button>}
     </div>
   );
 };
