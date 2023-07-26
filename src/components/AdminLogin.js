@@ -19,7 +19,7 @@ const AdminLogin = () => {
 
   return (
     <div>
-      <h1 className=' mt-4 pb-4'>Welcome Please enter the Admin Id to log in</h1>
+      <h1 className=' mt-4 pb-4'> Please enter the Admin ID to login</h1>
       <input 
         type="text" 
         value={id} 
