@@ -3,10 +3,10 @@ import { Route, useNavigate } from 'react-router-dom';
 import { adminContext } from '../context/AdminState';
 
 const PrivateRoute = ({ children }) => {
-  const { isAdminLoggedIn } = useContext(adminContext);
+  const { isAdminLoggedIn, isCallCenterLoggedIn } = useContext(adminContext);
   let navigate = useNavigate();
 
-  if (!isAdminLoggedIn) {
+  if (!isAdminLoggedIn && !isCallCenterLoggedIn) {
     navigate("/");
     return null;
   }
